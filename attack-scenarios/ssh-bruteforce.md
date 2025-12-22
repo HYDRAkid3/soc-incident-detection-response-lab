@@ -87,6 +87,10 @@ This confirmed that the attack produced sufficient telemetry for SOC detection a
 
 ## 6. MITRE ATT&CK Mapping
 
+| Technique ID    | Technique Name   | Tactic               | Description                                                        |
+|-----------------|------------------|----------------------|--------------------------------------------------------------------|
+| T1110           | Brute Force      | Credential Access    | Adversary attempts to gain access by guessing valid credentials    |
+
 ## 7. Evidence (Screenshots)
 SSH Service Discovery
 
