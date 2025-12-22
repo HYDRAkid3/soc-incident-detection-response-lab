@@ -1,15 +1,23 @@
 # False Positive Considerations – SSH Brute Force
 
 ## Potential Benign Causes
-- User mistyping password repeatedly
-- Automated configuration management tools
-- Vulnerability scans
+
+- User repeatedly mistyping credentials
+- Automated configuration or orchestration tools
+- Security scanning or compliance checks
+
+---
 
 ## Why This Activity Was Not Benign
-- High frequency of failures
-- Followed by successful authentication
-- Privileged command execution
+
+- High frequency of authentication failures
+- Followed by a successful SSH login
 - Source IP identified as Kali Linux attacker VM
+- Activity aligned with brute force attack tooling
+
+---
 
 ## Conclusion
-This activity met the criteria for a true positive security incident.
+
+Based on frequency, sequence, and source context,
+this activity meets the criteria for a **true positive security incident**.
