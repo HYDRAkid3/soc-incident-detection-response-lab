@@ -32,10 +32,6 @@ and subsequent successful authentication activity.
 
 ---
 
-## 📸 Evidence
-### Wazuh SSH Authentication Events
-![Wazuh SSH Authentication Events](https://raw.githubusercontent.com/HYDRAkid3/mini-soc-lab/main/screenshots/wazuh_ssh_failed_events.png)
-
 ## 📄 Sample Alert (Sanitized)
 
 ```json
@@ -54,5 +50,7 @@ and subsequent successful authentication activity.
   }
 }
 ```
-
+## 📸 Evidence
+### Wazuh SSH Authentication Events
+![Wazuh SSH Authentication Events](https://raw.githubusercontent.com/HYDRAkid3/mini-soc-lab/main/screenshots/wazuh_ssh_failed_events.png)
 
