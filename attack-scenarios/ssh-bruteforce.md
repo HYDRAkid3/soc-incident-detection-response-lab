@@ -92,17 +92,16 @@ This confirmed that the attack produced sufficient telemetry for SOC detection a
 | T1110           | Brute Force      | Credential Access    | Adversary attempts to gain access by guessing valid credentials    |
 
 ## 7. Evidence (Screenshots)
-SSH Service Discovery
 
-(https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/nmap_scan_ubuntu.png)
+### SSH Service Discovery
+![SSH Service Discovery](screenshots/nmap_scan_ubuntu.png)
 
-Brute Force Attack Execution (Hydra)
+### Brute Force Attack Execution (Hydra)
+![Hydra Brute Force Attack](screenshots/hydra_bruteforce.png)
 
-(https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/hydra_bruteforce.png)
+### Wazuh Detected SSH Events
+![Wazuh SSH Authentication Events](screenshots/wazuh_ssh_failed_events.png)
 
-Wazuh Detected SSH Events
-
-(https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/wazuh_ssh_failed_events.png)
 
 ---
 
