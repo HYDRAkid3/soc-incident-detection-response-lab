@@ -90,15 +90,15 @@ This confirmed that the attack produced sufficient telemetry for SOC detection a
 ## 7. Evidence (Screenshots)
 SSH Service Discovery
 
-https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/nmap_scan_ubuntu.png
+(https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/nmap_scan_ubuntu.png)
 
 Brute Force Attack Execution (Hydra)
 
-https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/hydra_bruteforce.png
+(https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/hydra_bruteforce.png)
 
 Wazuh Detected SSH Events
 
-https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/wazuh_ssh_failed_events.png
+(https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/wazuh_ssh_failed_events.png)
 
 ---
 
