@@ -64,6 +64,57 @@ After confirming service availability, the attacker launched a credential brute 
 ```bash
 hydra -l ubuntu -P passwords.txt ssh://10.0.0.95
 ```
+---
+
+## 5. Detection Context
+During the attack, the following telemetry was generated and collected:
+
+SSH authentication failures logged by the SSH daemon
+
+Successful SSH authentication following repeated failures
+
+Authentication events recorded in /var/log/auth.log
+
+Logs collected by the Wazuh Agent and forwarded to the Wazuh Manager
+
+The activity was visible in the Wazuh Dashboard under:
+
+Threat Hunting → Events
+
+This confirmed that the attack produced sufficient telemetry for SOC detection and investigation workflows.
+
+---
+
+## 6. MITRE ATT&CK Mapping
+
+## 7. Evidence (Screenshots)
+SSH Service Discovery
+
+screenshots/nmap_scan_ubuntu.png
+
+Brute Force Attack Execution (Hydra)
+
+screenshots/hydra_bruteforce.png
+
+Wazuh Detected SSH Events
+
+screenshots/wazuh_ssh_failed_events.png
+
+---
+
+## 8. Outcome & Learnings
+This simulation successfully demonstrated:
+
+- Generation of realistic SSH brute force telemetry
+
+- Reliable log collection and forwarding by the Wazuh Agent
+
+- Accurate detection and alerting by Wazuh
+
+- Clear mapping to MITRE ATT&CK technique T1110
+
+- A strong foundation for SOC alert triage, investigation, and response validation
+
 
 
 
