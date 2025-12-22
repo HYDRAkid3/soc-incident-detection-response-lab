@@ -135,4 +135,4 @@ The following areas are intentionally excluded to maintain focus:
 
 ## Architecture Diagram
 
-![SOC Architecture](https://github.com/HYDRAkid3/mini-soc-lab/blob/main/architecture/architecture_diagram.png)
+![SOC Architecture](https://github.com/HYDRAkid3/mini-soc-lab/blob/main/screenshots/architecture_diagram.png)
