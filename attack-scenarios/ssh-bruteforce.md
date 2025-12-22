@@ -94,14 +94,13 @@ This confirmed that the attack produced sufficient telemetry for SOC detection a
 ## 7. Evidence (Screenshots)
 
 ### SSH Service Discovery
-![SSH Service Discovery](screenshots/nmap_scan_ubuntu.png)
+![SSH Service Discovery](../screenshots/nmap_scan_ubuntu.png)
 
 ### Brute Force Attack Execution (Hydra)
-![Hydra Brute Force Attack](screenshots/hydra_bruteforce.png)
+![Hydra Brute Force Attack](../screenshots/hydra_bruteforce.png)
 
 ### Wazuh Detected SSH Events
-![Wazuh SSH Authentication Events](screenshots/wazuh_ssh_failed_events.png)
-
+![Wazuh SSH Authentication Events](../screenshots/wazuh_ssh_failed_events.png)
 
 ---
 
