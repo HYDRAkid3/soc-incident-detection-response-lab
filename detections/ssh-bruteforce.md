@@ -1,28 +1,39 @@
 # SSH Brute Force Detection – Wazuh
 
 ## 🛡️ Detection Overview
-Wazuh detected repeated SSH authentication failures indicating a brute force attack.
+
+This detection identifies repeated SSH authentication failures
+consistent with a credential brute force attack.
+
+The activity was generated during a controlled attack simulation
+and detected using default Wazuh SSH authentication rules.
 
 ---
 
 ## 📊 Detection Source
-- Agent: `ubuntu-endpoint1`
-- Log File: `/var/log/auth.log`
-- Service: SSHD
+
+- **Agent:** ubuntu-endpoint1
+- **Monitored File:** `/var/log/auth.log`
+- **Service:** sshd
+- **Log Type:** Authentication events
 
 ---
 
-## 🚨 Triggered Rules
+## 🚨 Triggered Wazuh Rules
 
-| Rule ID | Description                     | Level |
-|-------|---------------------------------|-------|
-| 5760  | sshd: authentication failed     | 5     |
-| 5501  | PAM login session opened        | 3     |
-| 5502  | PAM login session closed        | 3     |
+| Rule ID | Description                         | Level |
+|--------:|-------------------------------------|------:|
+| 5760    | sshd: authentication failed         | 5     |
+| 5501    | PAM: login session opened           | 3     |
+| 5502    | PAM: login session closed           | 3     |
+
+These rules collectively indicate repeated failed login attempts
+and subsequent successful authentication activity.
 
 ---
 
-## 📄 Sample Alert
+## 📄 Sample Alert (Sanitized)
+
 ```json
 {
   "rule": {
@@ -38,10 +49,3 @@ Wazuh detected repeated SSH authentication failures indicating a brute force att
     "ip": "10.0.0.226"
   }
 }
-
-
-## Severiy
-Medium (Level 5) – repeated authentication failures from single source.
-
-## 📸 Evidence
-screenshots/wazuh_ssh_failed_events.png
