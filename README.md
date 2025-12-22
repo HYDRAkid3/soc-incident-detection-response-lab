@@ -1,66 +1,44 @@
-\# Mini SOC Lab (Wazuh + Docker)
+# SOC Lab Architecture
 
+This document describes the architecture of the Mini SOC Lab built using Wazuh.
 
+## Components Overview
 
-This repository contains a hands-on Security Operations Center (SOC) lab built
+### Attacker
+- **Kali Linux**
+- Used to simulate real-world attacks such as:
+  - SSH brute-force attacks
+  - Network port scanning
 
-using Wazuh and Docker. The project demonstrates centralized log collection,
+### Endpoint
+- **Ubuntu Linux VM**
+- Runs the **Wazuh Agent**
+- Generates security telemetry including:
+  - Authentication logs
+  - Process execution
+  - File integrity events
+  - Privilege escalation activity
 
-alert detection, and investigation workflows through realistic attack
+### SOC Platform
+- **Wazuh Manager**
+  - Receives logs from agents
+  - Performs decoding and rule-based analysis
+- **Wazuh Indexer (OpenSearch)**
+  - Stores and indexes security events
+- **Wazuh Dashboard**
+  - Used by analysts for monitoring, threat hunting, and investigations
 
-simulations.
+### Analyst
+- Security analyst accesses alerts and events through the Wazuh Dashboard using a web browser.
 
+## Data Flow
 
+1. Attacks are launched from Kali Linux against the Ubuntu endpoint.
+2. The Wazuh Agent on Ubuntu collects system and security logs.
+3. Logs are securely forwarded to the Wazuh Manager.
+4. Processed events are indexed in the Wazuh Indexer.
+5. Alerts and logs are visualized in the Wazuh Dashboard for analysis.
 
-\## Architecture
+## Architecture Diagram
 
-
-
-!\[SOC Architecture Diagram](architecture/architecture\_diagram.png)
-
-
-
-This architecture represents a simplified SOC environment where security events
-
-from an Ubuntu endpoint are collected by a Wazuh agent, processed by the Wazuh
-
-manager and indexer, and visualized through the Wazuh dashboard for analyst
-
-review.
-
-
-
-\## Tech Stack
-
-\- Wazuh (SIEM + EDR)
-
-\- Docker \& Docker Compose
-
-\- Ubuntu Linux (Monitored Endpoint)
-
-\- Kali Linux (Attack Simulation)
-
-\- Git \& GitHub
-
-
-
-\## Project Scope
-
-\- Centralized log ingestion
-
-\- SSH brute-force detection
-
-\- Basic attack investigation and reporting
-
-\- SOC-style documentation and playbooks
-
-
-
-\## Status
-
-🚧 In progress — attack scenarios, detections, and investigation reports are
-
-being added.
-
-
-
+![SOC Architecture](architecture_diagram.png)
