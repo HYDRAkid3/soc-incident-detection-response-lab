@@ -66,6 +66,7 @@ Fail2Ban was verified to be running on the endpoint.
 
 ### Enabled Fail2Ban Jails
 The SSH jail was enabled with defined thresholds.
+
 ![Fail2Ban Enabled Jails](../screenshots/fail2ban_enabled_jails.png)
 
 ### Attacker IP Blocked
