@@ -1,4 +1,4 @@
-# 🧪 Mini SOC Lab – Complete Build Guide
+# 🧪 SOC Incident Detection & Response Lab – Complete Build Guide
 
 This guide is designed for anyone who wants to **build a realistic Security Operations Center (SOC) lab**, not just install tools.
 
