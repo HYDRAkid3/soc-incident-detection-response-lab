@@ -1,4 +1,4 @@
-#  Step-by-Step Build (Conceptual)
+#  Step-by-Step Build 
 
 This section outlines **what to build and verify**, not command-by-command instructions.
 
