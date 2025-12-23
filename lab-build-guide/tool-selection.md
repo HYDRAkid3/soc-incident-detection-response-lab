@@ -1,4 +1,4 @@
-# 🔧 Tool Selection & Design Rationale
+#  Tool Selection & Design Rationale
 
 A good SOC lab is not about using the most expensive tools.
 It’s about choosing tools that **teach you how SOCs actually work**.
@@ -7,7 +7,7 @@ This section explains why each component was chosen.
 
 ---
 
-## 🖥️ Why Ubuntu Linux (Monitored Endpoint)
+##  Why Ubuntu Linux (Monitored Endpoint)
 
 Ubuntu Linux is one of the most widely used Linux distributions in:
 - Cloud environments
@@ -25,12 +25,12 @@ Ubuntu allows you to practice:
 - Privilege escalation monitoring
 - Log-based investigations
 
-🔗 Official site:  
+Official site:  
 https://ubuntu.com/
 
 ---
 
-## 🐉 Why Kali Linux (Attacker Machine)
+##  Why Kali Linux (Attacker Machine)
 
 Kali Linux is the **industry standard offensive security distribution**.
 
@@ -50,12 +50,12 @@ It is widely used by:
 In a SOC context, Kali represents:
 > “What real attackers might look like, not what textbooks show.”
 
-🔗 Official site:  
+Official site:  
 https://www.kali.org/
 
 ---
 
-## 🛡️ Why Wazuh (SOC Platform)
+##  Why Wazuh (SOC Platform)
 
 Wazuh is a **powerful open-source SIEM + EDR platform**.
 
@@ -76,12 +76,12 @@ Most importantly:
 
 Wazuh provides **enterprise-grade visibility without barriers**.
 
-🔗 Official site:  
+Official site:  
 https://wazuh.com/
 
 ---
 
-## 🧠 Design Philosophy
+##  Design Philosophy
 
 Every tool in this lab was chosen to answer one question:
 
