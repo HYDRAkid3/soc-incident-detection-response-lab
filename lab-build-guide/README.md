@@ -1,4 +1,4 @@
-# 🧪 SOC Incident Detection & Response Lab – Complete Build Guide
+#  SOC Incident Detection & Response Lab – Complete Build Guide
 
 This guide is designed for anyone who wants to **build a realistic Security Operations Center (SOC) lab**, not just install tools.
 
@@ -12,7 +12,7 @@ This guide will help you **build the same Mini SOC Lab** used in this project.
 
 ---
 
-## 🎯 What You Will Build
+##  What You Will Build
 
 By following this guide, you will deploy:
 
@@ -31,15 +31,15 @@ It is a **learning-focused, SOC-first lab design guide**.
 
 ---
 
-## 📌 What This Guide Is — and Is Not
+##  What This Guide Is — and Is Not
 
-✅ This guide explains:
+This guide explains:
 - Architecture decisions
 - Tool selection rationale
 - How components interact
 - How to validate telemetry
 
-❌ This guide does NOT:
+This guide does NOT:
 - Replace official installation docs
 - Provide exploit walkthroughs
 - Mix lab setup with incident documentation
@@ -48,7 +48,7 @@ The goal is to help you **build confidently**, then **experiment freely**.
 
 ---
 
-## 🧠 Recommended Mindset
+##  Recommended Mindset
 
 Treat this lab like a **real SOC environment**, even though it’s small.
 
