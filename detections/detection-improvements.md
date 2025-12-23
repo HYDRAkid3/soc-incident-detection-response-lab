@@ -55,3 +55,14 @@ THEN:
 
 ## Detection Engineering Mindset
 Effective SOC detection prioritizes **signal quality over alert quantity**. Correlation and tuning are essential to reduce analyst fatigue while maintaining coverage.
+
+---
+
+## 📸 Evidence
+### Alerts Before Mitigation
+High alert volume observed before automated blocking.
+![Wazuh Alerts Before Block](../screenshots/wazuh_ssh_alerts_before_block.png)
+
+### Alerts After Mitigation
+Alert volume reduced after Fail2Ban enforcement.
+![Wazuh Alerts After Fail2Ban](../screenshots/wazuh_ssh_alerts_after_fail2ban.png)
