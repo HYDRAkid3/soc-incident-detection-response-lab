@@ -44,3 +44,10 @@ This confirms brute force activity resulting in account compromise.
 - Require SSH key-based access
 - Enable MFA where possible
 - Monitor for post-authentication privilege escalation
+
+---
+
+## 📸 Evidence
+### Post-Compromise Activity
+After successful authentication, privileged activity was detected on the endpoint.
+![Post Brute Force Activity](../screenshots/wazuh_post_bruteforce_activity.png)
