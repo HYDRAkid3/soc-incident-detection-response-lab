@@ -47,9 +47,9 @@ This sequence confirms **account compromise**, not user error.
 
 ## Analyst Decision
 
-✅ Confirmed Incident  
-❌ Not a false positive  
-🔺 SOC-level escalation required
+Confirmed Incident  
+Not a false positive  
+SOC-level escalation required
 
 ---
 
