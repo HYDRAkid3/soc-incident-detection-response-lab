@@ -24,10 +24,10 @@ This behavior exceeds normal user error and indicates account compromise.
 
 ## Escalation Decision
 
-- **SOC-level escalation:** ✅ Required  
+- **SOC-level escalation:** Required  
   (Incident grouping, investigation, and response)
 
-- **Management / external escalation:** ❌ Not required  
+- **Management / external escalation:** Not required  
   - Single endpoint affected
   - No lateral movement detected
   - Attacker contained successfully
@@ -36,7 +36,7 @@ This behavior exceeds normal user error and indicates account compromise.
 
 ## Final Analyst Verdict
 
-✅ Confirmed Security Incident  
-🔒 Contained  
-📉 Residual risk reduced  
-📌 No further escalation required
+Confirmed Security Incident  
+Contained  
+Residual risk reduced  
+No further escalation required
