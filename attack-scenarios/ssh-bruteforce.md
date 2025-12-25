@@ -1,9 +1,9 @@
-# 🔐 SSH Brute Force Attack – Simulation
+# SSH Brute Force Attack – Simulation
 
 This document describes a simulated SSH brute force attack executed within the SOC lab environment.  
 The scenario is designed to generate authentication-related telemetry and validate detection, investigation, and alerting capabilities in **Wazuh**.
 
-> ⚠️ **Disclaimer**  
+> **Disclaimer**  
 > This activity was conducted in an isolated lab environment for **educational and defensive security purposes only**.
 
 ---
